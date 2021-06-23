@@ -8,7 +8,7 @@ namespace ConsoleAppPeople
     /// Tips, prop + tabtab gives property
     /// ctor + tabtab gives constructor
     /// </summary>
-    class Person
+    public class Person
     {
         //firstName, lastName and age is private
         string firstName;
@@ -87,6 +87,11 @@ namespace ConsoleAppPeople
             Age = age;
             Gender = gender;
             IsVaccinated = isVaccinated;
+        }
+
+        public string Details()
+        {
+            return $"Name: {FullName}\nAge: {Age}\nGender: {Gender}\nVaccinated: {(IsVaccinated ? "Yes" : "No" )}" ;
         }
     }
 }
