@@ -99,6 +99,8 @@ namespace ConsoleAppPeople
             return $"Name: {FullName}\nAge: {Age}\nGender: {Gender}\nVaccinated: {(IsVaccinated ? "Yes" : "No" )}" ;
         }
 
+        //Should not be public, what is the point of id being private if everyone can reset it
+        //Can have an internal reset
         public int resetIdCounter()
         {
             idCounter = 0;

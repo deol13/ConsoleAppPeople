@@ -21,9 +21,6 @@ namespace ConsoleAppPeople.Tests
 
             //Assert
             Assert.True(before < result);
-
-            Person person1 = new Person(firstName, lastName);
-            person1.resetIdCounter();
         }
 
         [Fact]

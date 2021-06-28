@@ -18,14 +18,16 @@ namespace ConsoleAppPeople
             */
 
 
-            List<Person> people = InitPeopleList();
-            
-            AddPersonToList(people);
-            
-            foreach (Person itemInList in people)
-            {
-                Console.WriteLine(itemInList.Details() + "\n");
-            }
+            //List<Person> people = InitPeopleList();
+            //
+            //AddPersonToList(people);
+            //
+            //foreach (Person itemInList in people)
+            //{
+            //    Console.WriteLine(itemInList.Details() + "\n");
+            //}
+
+
         }
 
         static List<Person> InitPeopleList()
