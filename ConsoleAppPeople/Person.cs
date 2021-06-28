@@ -101,7 +101,7 @@ namespace ConsoleAppPeople
 
         //Should not be public, what is the point of id being private if everyone can reset it
         //Can have an internal reset
-        public int resetIdCounter()
+        public static int resetIdCounter()
         {
             idCounter = 0;
 

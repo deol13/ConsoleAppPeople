@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleAppPeople
 {
-    class CalcNumber
+    public class CalcNumber
     {
         //params does so we can use any numbers of doubles as arguments to this function
         public static double Addition(params double[] numbers)
