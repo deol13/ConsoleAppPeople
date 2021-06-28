@@ -10,6 +10,10 @@ namespace ConsoleAppPeople
     /// </summary>
     public class Person
     {
+        static int idCounter = 0;
+        public static int Counter { get { return idCounter; } }
+
+        public readonly int id;
         //firstName, lastName and age is private
         string firstName;
         string lastName;    //Default start is null
@@ -67,6 +71,7 @@ namespace ConsoleAppPeople
 
         public Person(string firstName, string lastName)
         {
+            id = idCounter++;
             //Gender = Gender.Other;
             //IsVaccinated = false;
 
@@ -92,6 +97,13 @@ namespace ConsoleAppPeople
         public string Details()
         {
             return $"Name: {FullName}\nAge: {Age}\nGender: {Gender}\nVaccinated: {(IsVaccinated ? "Yes" : "No" )}" ;
+        }
+
+        public int resetIdCounter()
+        {
+            idCounter = 0;
+
+            return idCounter;
         }
     }
 }

@@ -17,10 +17,11 @@ namespace ConsoleAppPeople
             Console.WriteLine(anotherPerson.FullName);
             */
 
+
             List<Person> people = InitPeopleList();
-
+            
             AddPersonToList(people);
-
+            
             foreach (Person itemInList in people)
             {
                 Console.WriteLine(itemInList.Details() + "\n");
